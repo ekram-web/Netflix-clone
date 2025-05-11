@@ -1,12 +1,29 @@
-# React + Vite
+# Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Netflix Clone built using React.js, styled with CSS, and enhanced with Material-UI icons. This project replicates the UI of Netflix, including navigation and interactive elements.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Adapts to different screen sizes.
+- **Navigation Bar**: Includes links for Home, TV Shows, Movies, Latest, My List, and Browse by Languages.
+- **Icons**: Search, Notifications, Account, and Dropdown icons using Material-UI.
+- **Sticky Header**: The header remains fixed at the top while scrolling.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js**: For building the user interface.
+- **CSS**: For styling the components.
+- **Material-UI Icons**: For adding interactive icons.
+
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ekram-web/netflix-clone.git
+
+2. Navigate to the project directory: cd netflix-clone
+
+3. Install dependencies: npm install
+
+4. Start the development server: npm run dev
