@@ -1,14 +1,14 @@
-
-import './App.css'
+import "./App.css";
+import Home from "./pages/Home/Home.jsx";
 
 function App() {
-
-
   return (
     <>
-      <h1>Netflix Clone</h1>
+      <div className="App">
+        <Home />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
