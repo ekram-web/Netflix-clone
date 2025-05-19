@@ -14,7 +14,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       try {
         console.log(fetchUrl);
         const request = await axios.get(fetchUrl);
-        console.log(request);
+        // console.log(request);
         setMovies(request.data.results);
       } catch (error) {
         console.log("Error fetching movies:", error);
@@ -29,11 +29,11 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       movieTrailer(movie?.title || movie?.name || movie?.original_name)
         .then((url) => {
           if (url) {
-            console.log("Trailer URL:", url);
+            // console.log("Trailer URL:", url);
             const urlParams = new URLSearchParams(new URL(url).search);
-            console.log("URL Params:", urlParams);
+            // console.log("URL Params:", urlParams);
             const videoId = urlParams.get("v");
-            console.log("Video ID:", videoId);
+            // console.log("Video ID:", videoId);
             setTrailerUrl(videoId);
           } else {
             console.log("No trailer found for this movie.");
@@ -57,7 +57,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
           {movies?.map((movie, index) => (
             <img
               onClick={() => handleClick(movie)}
-              key={movie.id || index} // Prefer using a unique identifier like movie.id
+              key={movie.id || index} 
               src={`${base_url}${
                 isLargeRow ? movie.poster_path : movie.backdrop_path
               }`}
